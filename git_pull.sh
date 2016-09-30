@@ -7,7 +7,7 @@ fi
 git clean -df
 POST_STASH_STATUS="`git status -s | wc -c`"
 if [ $POST_STASH_STATUS -eq 0 ]; then
-    git pull --rebase origin eng
+    git pull --rebase origin dev
 fi
 if [ $PRE_STASH_STATUS -gt 0 ]; then
     git stash pop
