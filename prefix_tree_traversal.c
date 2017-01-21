@@ -1,5 +1,5 @@
-/* Traverse a prefix tree and print out all subnets which match
- * the input subnet and mask. 
+/* Traverse a prefix tree and print out all subnets which fall under
+ * the input subnet
  */
  
  void prefix_tree_traversal(node* root, int val, int addr, int pos) {
