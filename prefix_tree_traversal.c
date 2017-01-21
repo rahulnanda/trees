@@ -1,5 +1,10 @@
 /* Traverse a prefix tree and print out all subnets which fall under
  * the input subnet
+ *
+ *  root : The root of the prefix tree
+ *  val  : The input subnet
+ *  addr : The subnet at each recursion level
+ *  pos  : The bit position currently being evaluated, initialized to (1<<31)
  */
  
  void prefix_tree_traversal(node* root, int val, int addr, int pos) {
@@ -21,3 +26,4 @@
     }
 }
         
+    
