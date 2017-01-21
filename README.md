@@ -1,4 +1,4 @@
-rahul-dev-setup
+rahulnanda-trees
 ===============
 
-This repository contains instructions to setup a development environment in Linux.
+This repository contains common code examples used with data structures associated with trees.
