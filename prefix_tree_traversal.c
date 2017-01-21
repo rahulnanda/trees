@@ -2,22 +2,22 @@
  * the input subnet and mask. 
  */
  
- void prefix_tree_traversal(node* root, int val, int mask, int addr) {
+ void prefix_tree_traversal(node* root, int val, int addr, int pos) {
     
     if (root == NULL) {
         return;
-    }
+    }   
     
     if (root->valid) {
         printf("%d\n", addr);
     }
-    
-    int bit = val & (1<<31);
-     
-     
-    if (val & (1<<31) == 0) {
-        
-        prefix_tree_traversal(root->left, val<<1, mask<<1, 
-    
+
+    if (pos) { 
+        if (val & (1<<31)) {
+            addr |= pos;
+        }
+        prefix_tree_traversal(root->left, val<<1, addr, pos>>1);
+        prefix_tree_traversal(root->right, val<<1, addr, pos>>1);
+    }
 }
         
