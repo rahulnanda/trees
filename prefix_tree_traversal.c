@@ -6,7 +6,14 @@
  *  addr : The subnet at each recursion level
  *  pos  : The bit position currently being evaluated, initialized to (1<<31)
  */
- 
+#include <stdio.h>
+
+typedef struct node_s {
+    int valid;
+    struct node_s *left;
+    struct node_s *right;
+} node;
+
  void prefix_tree_traversal(node* root, int val, int addr, int pos) {
     
     if (root == NULL) {
