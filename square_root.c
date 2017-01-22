@@ -22,7 +22,6 @@ float square_root(int val){
 }
 
 int main(void) {
-	// your code goes here
 	printf("2: %f\n", square_root(2));
 	printf("3: %f\n", square_root(3));
 	printf("4: %f\n", square_root(4));
