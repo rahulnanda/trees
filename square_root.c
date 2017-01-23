@@ -4,7 +4,7 @@
 float binary_search(float val, float low, float high){
 	float mid;
 	
-	mid = (low+high)/2;
+	mid = (low + high)/2;
 
 	if (fabs(val - mid*mid) > 0.00001) {
 		if (val > mid*mid) {
